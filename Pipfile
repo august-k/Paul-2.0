@@ -1,0 +1,22 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = "*"
+
+[packages]
+spawningtool = "*"
+black = "==18.9b0"
+flake8 = "*"
+bandit = "*"
+pytest = "*"
+pydocstyle = "*"
+tox = "*"
+mypy = "*"
+burnysc2 = "*"
+opencv-python = "*"
+
+[requires]
+python_version = "3.7"
