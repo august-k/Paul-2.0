@@ -188,7 +188,8 @@ class Paul(sc2.BotAI):
                     pos = self.townhalls[0].position.to2.towards(
                         self._game_info.map_center, 5
                     )
-                    if self.can_afford(UnitTypeId["SPAWNINGPOOL"]):
+                    if self.can_afford(UnitTypeId["SPAWNINGPOOL"]) and self.workers:
+                        worker = self.workers.closest_to(pos)
                         self.do(worker.build(UnitTypeId["SPAWNINGPOOL"], pos))
                 else:
                     return
